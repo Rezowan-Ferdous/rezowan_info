@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezowan | AI Researcher</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Rezowan<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research">Research</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="experience">Experience</a></li>
+                <li><a href="blog">Blog</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+<section class="container">
+    <div class="section-header">
+        <h1 class="section-title">Experience</h1>
+    </div>
+
+    <div class="timeline">
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">•RobertGordonUniversity[(cid:128)]</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>•RobertGordonUniversity[(cid:128)]</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">PhDCandidateandTeachingAssistant</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>PhDCandidateandTeachingAssistant</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Conductingadvancedresearchoncomplexsurgicalvideounderstanding,focusingonspatial-temporalcontext</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Conductingadvancedresearchoncomplexsurgicalvideounderstanding,focusingonspatial-temporalcontext</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Developingframeworksforfutureactionpredictionandsafetyevaluationtodetectpotentialsurgicalerrors.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Developingframeworksforfutureactionpredictionandsafetyevaluationtodetectpotentialsurgicalerrors.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦ImplementingnovelarchitecturesusingVisionTransformersandStateSpaceModels(SSM)forsegmentationand</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦ImplementingnovelarchitecturesusingVisionTransformersandStateSpaceModels(SSM)forsegmentationand</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">detectiontasks.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>detectiontasks.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦PioneeringtheapplicationofLargeLanguageModels(LLMs)andVision-LanguageModels(VLMs)toenhance</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦PioneeringtheapplicationofLargeLanguageModels(LLMs)andVision-LanguageModels(VLMs)toenhance</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">visualreasoningforcomplexrobotictasks.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>visualreasoningforcomplexrobotictasks.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Teachingstudents;conductedlabsonPythonprogramming,DataScience,andNLP.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Teachingstudents;conductedlabsonPythonprogramming,DataScience,andNLP.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">•BeratenSoftwareCorporation[(cid:128)]</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>•BeratenSoftwareCorporation[(cid:128)]</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">SoftwareDeveloper</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>SoftwareDeveloper</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦EngineeredsoftwaresolutionsforIndianChildWelfareandTribalCourtsystemsusing.NETCore6Framework</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦EngineeredsoftwaresolutionsforIndianChildWelfareandTribalCourtsystemsusing.NETCore6Framework</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">andMSSQLServer.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>andMSSQLServer.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Developedandmaintainede-courtsystemsforcriminalcasemanagement,ensuringrobustdatahandlingand</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Developedandmaintainede-courtsystemsforcriminalcasemanagement,ensuringrobustdatahandlingand</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦ManagedprojectversioncontrolandcollaborationusingBitbucketandGitHub</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦ManagedprojectversioncontrolandcollaborationusingBitbucketandGitHub</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Integratedcomplexdatabaseschemaswith.NETbackendservicestosupporttribalhealthcareandwelfareservices.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Integratedcomplexdatabaseschemaswith.NETbackendservicestosupporttribalhealthcareandwelfareservices.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">•TimeResearchandInnovation(TRI)[(cid:128)]</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>•TimeResearchandInnovation(TRI)[(cid:128)]</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">ResearchAssistant</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>ResearchAssistant</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦ConductedresearchprojectsandledtheSoftwareDevelopmentLifeCycle(SDLC)incollaborationwithdevelopers.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦ConductedresearchprojectsandledtheSoftwareDevelopmentLifeCycle(SDLC)incollaborationwithdevelopers.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Assistedinsystemdesigningandrequirementengineeringtoaligntechnicaloutputswithresearchgoals.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Assistedinsystemdesigningandrequirementengineeringtoaligntechnicaloutputswithresearchgoals.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Developedanddeployedanend-to-endfacialrecognitionsystemforsmartattendancewithMLOps.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Developedanddeployedanend-to-endfacialrecognitionsystemforsmartattendancewithMLOps.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦AnalyzedchestX-raydataforCOVID-19detectionusingdeeplearningmodels.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦AnalyzedchestX-raydataforCOVID-19detectionusingdeeplearningmodels.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">•RobertGordonUniversity</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>•RobertGordonUniversity</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">PhDCandidateinComputerVision(AI)</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>PhDCandidateinComputerVision(AI)</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Advisor: ProfessorEyadElyan</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Advisor: ProfessorEyadElyan</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦DevelopingnovelTCN-Transformermodelsforsurgicalactionsegmentationandphaserecognitionand</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦DevelopingnovelTCN-Transformermodelsforsurgicalactionsegmentationandphaserecognitionand</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">anticipation.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>anticipation.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Designinggrammar-basedneuro-symbolicframeworksusingPyTorch/HuggingFacetopredictfutureactions</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Designinggrammar-basedneuro-symbolicframeworksusingPyTorch/HuggingFacetopredictfutureactions</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">•BangladeshUniversityofProfessionals</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>•BangladeshUniversityofProfessionals</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">M.Sc.inInformationandCommunicationEngineering</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>M.Sc.inInformationandCommunicationEngineering</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦CGPA:3.48(2:1UKGrade)|Advisor:</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦CGPA:3.48(2:1UKGrade)|Advisor:</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦Developedadeeplearning-basedattendancesystemusingMTCNNandVGG16.</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦Developedadeeplearning-basedattendancesystemusingMTCNNandVGG16.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">•BangladeshUniversityofProfessionals</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>•BangladeshUniversityofProfessionals</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">B.Sc.inInformationandCommunicationEngineering</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>B.Sc.inInformationandCommunicationEngineering</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">◦CGPA:3.16(2:1UKGrade)</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>◦CGPA:3.16(2:1UKGrade)</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Hossain Ferdous Shuvo</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Hossain Ferdous Shuvo</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Rezowan| Aberdeen,Scotland,UnitedKingdom</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Rezowan| Aberdeen,Scotland,UnitedKingdom</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Myresearchfocuseson</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Myresearchfocuseson</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Mar2023–Present</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Mar2023–Present</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Aberdeen,Scotland</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Aberdeen,Scotland</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">May2022–Mar2023</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>May2022–Mar2023</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Portland,OR(Remote)</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Portland,OR(Remote)</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Oct2020–Oct2022</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Oct2020–Oct2022</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Southampton,UK(DhakaBranch)</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Southampton,UK(DhakaBranch)</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Mar2023–Present</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Mar2023–Present</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Aberdeen,Scotland</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Aberdeen,Scotland</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Jan2019–Dec2021</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Jan2019–Dec2021</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Dhaka,Bangladesh</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Dhaka,Bangladesh</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Dr. ShamimAl. Mamun</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Dr. ShamimAl. Mamun</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Jan2015–Jan2019</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Jan2015–Jan2019</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 - Present</div>
+            <div class="card">
+                <h3 class="card-title">Researcher/Developer</h3>
+                <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Dhaka,Bangladesh</h4>
+                <p class="card-meta"><i class="fas fa-map-marker-alt"></i> Unknown</p>
+                <p>Dhaka,Bangladesh</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rezowan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+</body>
+
+</html>
