@@ -209,22 +209,5 @@
             "organization": "Active School Aberdeen, Scotland",
             "description": "Engaging in voluntary sessions to support school activities."
         }
-    ],
-    "references": [
-        {
-            "name": "Eyad Elyan",
-            "title": "Professor, Robert Gordon University",
-            "email": "e.elyan@rgu.ac.uk"
-        },
-        {
-            "name": "Md Junayed Hasan",
-            "title": "AI Engineer, Subsea7",
-            "email": "junayed.hasan@subsea7.com"
-        },
-        {
-            "name": "Dr. M Shamim Kaiser",
-            "title": "Professor, Jahangirnagar University, Dhaka",
-            "email": "mskaiser@juniv.edu"
-        }
     ]
 }
