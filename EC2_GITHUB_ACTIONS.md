@@ -17,10 +17,24 @@ This guide explains how to set up an EC2 instance to serve your static site and 
     ```
 
 3.  **Install Software**:
-    ```bash
-    sudo apt update
-    sudo apt install nginx git python3-pip -y
-    ```
+    *   **For Ubuntu**:
+        ```bash
+        sudo apt update
+        sudo apt install nginx git python3-pip -y
+        ```
+    *   **For Amazon Linux 2023 (ec2-user)**:
+        ```bash
+        sudo dnf update -y
+        sudo dnf install git nginx python3-pip -y
+        sudo systemctl start nginx
+        sudo systemctl enable nginx
+        ```
+    *   **For Amazon Linux 2 (legacy)**:
+        ```bash
+        sudo amazon-linux-extras install nginx1 -y
+        sudo systemctl start nginx
+        sudo systemctl enable nginx
+        ```
 
 4.  **Clone Your Repo**:
     ```bash
@@ -31,15 +45,26 @@ This guide explains how to set up an EC2 instance to serve your static site and 
     python3 build.py
     ```
 
-5.  **Configure Nginx**:
-    Point Nginx to your repo folder.
+6.  **Configure Nginx (Amazon Linux)**:
+    Since I've created an `nginx.conf` in the repo for you, just copy it:
     ```bash
-    sudo nano /etc/nginx/sites-available/default
-    # Change 'root /var/www/html;' to 'root /home/ubuntu/rezowan_info;'
-    # Save (Ctrl+O, Enter, Ctrl+X)
+    # Backup original
+    sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+    
+    # Overwrite with ours
+    sudo cp /home/ec2-user/rezowan_info/nginx.conf /etc/nginx/nginx.conf
+    
+    # Fix permissions so Nginx can read your files
+    chmod 711 /home/ec2-user
+    chmod 755 /home/ec2-user/rezowan_info
+    
+    # Restart Nginx
     sudo systemctl restart nginx
     ```
-    Your site should now be live on your EC2 IP.
+
+    **Important Troubleshooting**:
+    *   **Check Status**: `sudo systemctl status nginx` (should be Active: active (running)).
+    *   **Check Firewall (Security Group)**: Go to AWS Console > EC2 > Instances > (Select Instance) > Security > Security Groups. Ensure there is an Inbound Rule allowing **Type: HTTP, Port: 80, Source: 0.0.0.0/0**. If this is missing, the site won't load even if Nginx is running.
 
 ---
 
