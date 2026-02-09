@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <h1>{{ project.title }}</h1>
+    <p class="meta">{{ project.category }}</p>
+    {% if project.github_url %}
+    <a href="{{ project.github_url }}" class="btn" target="_blank">View on GitHub</a>
+    {% endif %}
+    <hr>
+    <div class="content">
+        {{ project.description | safe }}
+    </div>
+    <div class="mt-4">
+        <h4>Technologies</h4>
+        <p>{{ project.technologies }}</p>
+    </div>
+</article>
+<a href="{{ relative_root }}/projects.html" class="btn mt-4">&larr; Back to Projects</a>
+{% endblock %}

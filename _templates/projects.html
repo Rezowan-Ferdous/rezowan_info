@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Projects</h1>
+<div class="project-list">
+    {% for project in projects %}
+    <div class="project-item">
+        <h2>
+            {% if project.project_url %}
+            <a href="{{ project.project_url }}" target="_blank">{{ project.title }}</a>
+            {% elif project.github_url %}
+            <a href="{{ project.github_url }}" target="_blank">{{ project.title }}</a>
+            {% else %}
+            {{ project.title }}
+            {% endif %}
+        </h2>
+        <p class="meta">{{ project.category }}</p>
+        <p>{{ project.description | striptags | truncate(200) }}</p>
+        <p class="meta"><strong>Tech:</strong> {{ project.technologies }}</p>
+
+        <a href="{{ relative_root }}/project/{{ project.id }}/index.html" class="btn">View Details</a>
+
+        {% if project.github_url %}
+        <a href="{{ project.github_url }}" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+        {% endif %}
+
+        {% if project.project_url %}
+        <a href="{{ project.project_url }}" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i>
+            Demo</a>
+        {% endif %}
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock %}

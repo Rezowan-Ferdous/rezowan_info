@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Rezowan</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ relative_root }}/static/css/minimal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="{{ relative_root }}/index.html" class="site-title">Rezowan.</a>
+                <div class="header-socials">
+                    <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"
+                        title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/Rezowan-Ferdous/" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:{{ email }}" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ relative_root }}/index.html"
+                            class="{% if active_page == 'home' %}active{% endif %}">Home</a></li>
+                    <li><a href="{{ relative_root }}/research.html"
+                            class="{% if active_page == 'research' %}active{% endif %}">Research</a>
+                    </li>
+                    <li><a href="{{ relative_root }}/projects.html"
+                            class="{% if active_page == 'projects' %}active{% endif %}">Projects</a>
+                    </li>
+                    <li><a href="{{ relative_root }}/blog.html"
+                            class="{% if active_page == 'blog' %}active{% endif %}">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Rezowan. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/Rezowan-Ferdous/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"><i
+                        class="fas fa-graduation-cap"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

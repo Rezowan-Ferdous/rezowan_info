@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirality-Aware Grammar-Guided Surgical Action Anticipation from Video | Rezowan</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/minimal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="../../index.html" class="site-title">Rezowan.</a>
+                <div class="header-socials">
+                    <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"
+                        title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/Rezowan-Ferdous/" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html"
+                            class="">Home</a></li>
+                    <li><a href="../../research.html"
+                            class="active">Research</a>
+                    </li>
+                    <li><a href="../../projects.html"
+                            class="">Projects</a>
+                    </li>
+                    <li><a href="../../blog.html"
+                            class="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+<article>
+    <h1>Chirality-Aware Grammar-Guided Surgical Action Anticipation from Video</h1>
+    <p class="lead">Rezowan Shuvo, MS Mekala, Eyad Elyan</p>
+    <p class="meta">Human Robotic Interactions (HRI) (Rank A), 2026</p>
+    
+    <a href="#" class="btn" target="_blank">View Paper</a>
+    
+    <hr>
+    <div class="content">
+        <h3>Abstract</h3>
+        
+        Anticipating surgical actions requires more than recognising motion patterns, it also demands adherence to procedural logic and the resolution of subtle ambiguities, such as distinguishing mirrored grasp–retract interactions. However, existing Transformer-based models often fall short in this domain, often producing structurally invalid step sequences and misclassifying chirally opposite actions that appear visually similar. To address these limitations, we in- troduce a neuro-symbolic framework centred on a Probabilistic Temporal Grammar (PTG). The grammar was constructed from a unified corpus of surgical data (Ground-Truth), by capturing proce- dural structure, temporal priors, and chirality-aware terminals for opposite actions (e.g., 𝑝𝑢𝑠ℎ_𝑛𝑒𝑒𝑑𝑙𝑒 ↔ 𝑝𝑢𝑙𝑙_𝑠𝑢𝑡𝑢𝑟𝑒) directly into its rules. To enforce causal consistency, the PTG incorporates a Goal-conditioned Multivariate Markov Chain (GcMMC) that mod- els evolving object-action dependencies. Our framework employs a two-stage process: a V-JEPA-powered Transformer generates raw forecasts of future actions and durations, which are then refined by a constrained parsing algorithm guided by the PTG. Candidate fu- tures are jointly scored for structural validity, temporal plausibility, and causal grounding. By explicitly encoding surgical logic into a unified neuro-symbolic system. Experiments across three publicly available surgical datasets show that our approach outperforms state-of-the-art anticipation models. Importantly, by generating interpretable and procedurally consistent forecasts of upcoming actions, PTG establishes the predictive foundation required for proactive robotic assistance and safe human–robot collaboration in the operating room.
+        
+    </div>
+</article>
+<a href="../../research.html" class="btn mt-4">&larr; Back to Research</a>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Rezowan. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/Rezowan-Ferdous/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"><i
+                        class="fas fa-graduation-cap"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

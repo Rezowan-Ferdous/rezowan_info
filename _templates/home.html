@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="intro">
+    <h1>Hello, I'm Rezowan.</h1>
+    <p class="lead">
+        I am a researcher in <strong>Computer Vision</strong> and <strong>Robotics</strong>.
+        I build systems that understand the world.
+    </p>
+    <div class="btn-group">
+        <a href="{{ relative_root }}/research.html" class="btn">View Research</a>
+        <a href="{{ relative_root }}/projects.html" class="btn">See Projects</a>
+        <a href="{{ relative_root }}/static/resume.pdf" class="btn btn-outline" target="_blank"><i
+                class="fas fa-file-pdf"></i> Download CV</a>
+    </div>
+
+</section>
+
+<section class="experience mt-5">
+    <h2>Experience</h2>
+    <div class="experience-list">
+        {% for exp in experience %}
+        <div class="exp-item mb-4">
+            <h3 class="h5">{{ exp.position }} <span class="text-muted">@ {{ exp.company }}</span></h3>
+            <p class="meta text-muted">
+                {{ exp.start_date.strftime('%b %Y') }} -
+                {% if exp.end_date %}
+                {{ exp.end_date.strftime('%b %Y') }}
+                {% else %}
+                Present
+                {% endif %}
+            </p>
+            <p class="meta"><i class="fas fa-map-marker-alt"></i> {{ exp.location }}</p>
+            <p>{{ exp.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="skills mt-5">
+    <h2>Skills and Interests</h2>
+    <div class="row">
+        {% for category, items in skills.items() %}
+        <div class="col-md-6 mb-3">
+            <h3>{{ category }}</h3>
+            <p>{{ items | join(', ') }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="awards mt-5">
+    <h2>Honors and Awards</h2>
+    <ul>
+        {% for award in awards %}
+        <li>
+            <strong>{{ award.title }}</strong> ({{ award.year }})<br>
+            {{ award.organization }} - {{ award.description }}
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="volunteering mt-5">
+    <h2>Voluntary Experience</h2>
+    <ul>
+        {% for vol in volunteering %}
+        <li>
+            <strong>{{ vol.role }}</strong>, {{ vol.organization }} ({{ vol.period }})<br>
+            {{ vol.description }}
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="references mt-5">
+    <h2>References</h2>
+    <div class="row">
+        {% for ref in references %}
+        <div class="col-md-4 mb-3">
+            <p>
+                <strong>{{ ref.name }}</strong><br>
+                {{ ref.title }}<br>
+                Email: <a href="mailto:{{ ref.email }}">{{ ref.email }}</a>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

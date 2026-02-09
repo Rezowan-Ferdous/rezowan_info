@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPAT: Goal-Progression-Aware Transformer with Recursive Grammar Induction for Action Anticipation | Rezowan</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/minimal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="../../index.html" class="site-title">Rezowan.</a>
+                <div class="header-socials">
+                    <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"
+                        title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/Rezowan-Ferdous/" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html"
+                            class="">Home</a></li>
+                    <li><a href="../../research.html"
+                            class="active">Research</a>
+                    </li>
+                    <li><a href="../../projects.html"
+                            class="">Projects</a>
+                    </li>
+                    <li><a href="../../blog.html"
+                            class="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+<article>
+    <h1>GPAT: Goal-Progression-Aware Transformer with Recursive Grammar Induction for Action Anticipation</h1>
+    <p class="lead">Rezowan Shuvo, MS Mekala, Eyad Elyan</p>
+    <p class="meta">European Conference on Computer Vision (ECCV) (Rank A*) (Submitted), 2024</p>
+    
+    <a href="#" class="btn" target="_blank">View Paper</a>
+    
+    <hr>
+    <div class="content">
+        <h3>Abstract</h3>
+        
+         Anticipating future actions in videos is crucial for domains such as autonomous systems and surgical robotics. Transformer-based architectures have advanced the state of the art by capturing long-range temporal dependencies, but they remain vulnerable to dataset biases, struggle with long unstruc- tured contexts, and often function as “black boxes,” offering little interpretability. To address these challenges, we propose aunified neuro-symbolic framework, Goal-progress Aware Trans- former (GPAT), that integrates neural sequence modelling with structured priors. Our approach combines: (i) a self-supervised spatial feature extractor (DINOv3) with adaptive sampling and sparse attention to efficiently scale to long surgical and pro- cedural videos, (ii) a Goal-conditioned Multivariate Markov Chain (GcMMC) that models goal-conditioned and object-centric state transitions, and (iii) a Duration-Aware Recursive Grammar Induction (DARGI) that encodes temporal plausibility and task structure while constraining prediction to grammatically valid sequences. Extensive experiments on public datasets show that our method improves cross-dataset generalisation, handles rare action classes more reliably, and provides transparent reasoning through grammar-based parses and goal-conditioned transitions, enabling interpretable long-horizon action anticipation. We further analyse the effect of grammar size and rule complexity, showing that balanced grammars yield the best trade-off between coverage and robustness, while improved GcMMC significantly reduces implausible long-horizon predictions. Using public surgical and non-surgical datasets, experiments showed that GPAT achieves state-of-the-art performance, improving mean-over-class accuracy
+        
+    </div>
+</article>
+<a href="../../research.html" class="btn mt-4">&larr; Back to Research</a>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Rezowan. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/Rezowan-Ferdous/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"><i
+                        class="fas fa-graduation-cap"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

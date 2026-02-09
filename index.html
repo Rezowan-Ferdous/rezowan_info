@@ -4,125 +4,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezowan | AI Researcher</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Home | Rezowan</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <!-- Icons -->
+    <link rel="stylesheet" href="./static/css/minimal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="static/css/style.css">
-    
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Rezowan<span class="dot">.</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research">Research</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="experience">Experience</a></li>
-                <li><a href="blog">Blog</a></li>
-            </ul>
-            <div class="theme-toggle">
-                <i class="fas fa-moon" id="theme-icon"></i>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="./index.html" class="site-title">Rezowan.</a>
+                <div class="header-socials">
+                    <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"
+                        title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/Rezowan-Ferdous/" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-        </div>
-    </nav>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"
+                            class="active">Home</a></li>
+                    <li><a href="./research.html"
+                            class="">Research</a>
+                    </li>
+                    <li><a href="./projects.html"
+                            class="">Projects</a>
+                    </li>
+                    <li><a href="./blog.html"
+                            class="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            
+<section class="intro">
+    <h1>Hello, I'm Rezowan.</h1>
+    <p class="lead">
+        I am a researcher in <strong>Computer Vision</strong> and <strong>Robotics</strong>.
+        I build systems that understand the world.
+    </p>
+    <div class="btn-group">
+        <a href="./research.html" class="btn">View Research</a>
+        <a href="./projects.html" class="btn">See Projects</a>
+        <a href="./static/resume.pdf" class="btn btn-outline" target="_blank"><i
+                class="fas fa-file-pdf"></i> Download CV</a>
+    </div>
+
+</section>
+
+<section class="experience mt-5">
+    <h2>Experience</h2>
+    <div class="experience-list">
         
-<section class="hero container">
-    <div class="hero-content">
-        <h1>Hi, I'm Rezowan.<br><span class="highlight">AI & Computer Vision Researcher.</span></h1>
-        <p class="hero-subtitle">Specializing in Robotics, Multi-Modal Perception, and Human-Robot Interaction. Pushing
-            the boundaries of embodied AI.</p>
-        <div class="hero-cta">
-            <a href="projects" class="btn">View My Work</a>
-            <a href="research" class="btn btn-outline">Publications</a>
+        <div class="exp-item mb-4">
+            <h3 class="h5">PhD Candidate and Teaching Assistant <span class="text-muted">@ Robert Gordon University</span></h3>
+            <p class="meta text-muted">
+                Mar 2023 -
+                
+                Present
+                
+            </p>
+            <p class="meta"><i class="fas fa-map-marker-alt"></i> Aberdeen, Scotland</p>
+            <p>• Conducting advanced research on complex surgical video understanding, focusing on spatial-temporal context analysis.<br>• Developing frameworks for future action prediction and safety evaluation to detect potential surgical errors.<br>• Implementing novel architectures using Vision Transformers and State Space Models (SSM) for segmentation and detection tasks.<br>• Pioneering the application of Large Language Models (LLMs) and Vision-Language Models (VLMs) to enhance visual reasoning for complex robotic tasks.<br>• Teaching students; conducted labs on Python programming, Data Science, and NLP.</p>
         </div>
+        
+        <div class="exp-item mb-4">
+            <h3 class="h5">Software Developer <span class="text-muted">@ Beraten Software Corporation</span></h3>
+            <p class="meta text-muted">
+                May 2022 -
+                
+                Mar 2023
+                
+            </p>
+            <p class="meta"><i class="fas fa-map-marker-alt"></i> Portland, OR-USA (Remote)</p>
+            <p>• Engineered software solutions for Indian Child Welfare and Tribal Court systems using .NET Core 6 Framework and MSSQL Server.<br>• Developed and maintained e-court systems for criminal case management, ensuring robust data handling and security.<br>• Managed project version control and collaboration using Bitbucket and GitHub.<br>• Integrated complex database schemas with .NET backend services to support tribal healthcare and welfare services.</p>
+        </div>
+        
+        <div class="exp-item mb-4">
+            <h3 class="h5">Research Assistant <span class="text-muted">@ Time Research and Innovation (TRI)</span></h3>
+            <p class="meta text-muted">
+                Oct 2020 -
+                
+                Oct 2022
+                
+            </p>
+            <p class="meta"><i class="fas fa-map-marker-alt"></i> Southampton, UK (Dhaka Branch)</p>
+            <p>• Conducted research projects and led the Software Development Life Cycle (SDLC) in collaboration with developers.<br>• Assisted in system designing and requirement engineering to align technical outputs with research goals.<br>• Developed and deployed an end-to-end facial recognition system for smart attendance with MLOps.<br>• Analyzed chest X-ray data for COVID-19 detection using deep learning models.</p>
+        </div>
+        
     </div>
 </section>
 
-<section class="container section-header">
-    <h2 class="section-title">Latest Publications</h2>
-</section>
-
-<section class="container grid">
-    
-    <div class="card">
-        <h3 class="card-title">ActivityRecognitionandAnticipation:</h3>
-        <p class="card-meta">
-            <span class="tag">Conference</span>
-            <span>2024</span>
-            
-            <span class="tag" style="border-color: var(--accent-color); background: transparent;">Q1</span>
-            
-        </p>
-        <p>Rezowan et al.</p>
-        <a href="#" class="btn-text"
-            style="color: var(--accent-color); margin-top: 1rem; display: inline-block;">Read Paper &rarr;</a>
+<section class="skills mt-5">
+    <h2>Skills and Interests</h2>
+    <div class="row">
+        
+        <div class="col-md-6 mb-3">
+            <h3>Programming</h3>
+            <p>Python, C# (.NET Core), Bash, SQL</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>MLOps Tools</h3>
+            <p>Docker, CI/CD, Git, Packaging, Pytest, Bitbucket</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>Tools & Platforms</h3>
+            <p>AWS, S3, EC2, Raspberry Pi, Overleaf, MSSQL Server, MATLAB, ROS, Arduino</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>Deep Learning & ML</h3>
+            <p>PyTorch, TensorFlow, Keras, Hugging Face, Scikit-learn, Pandas, NumPy, SciPy, Matplotlib, Seaborn</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>Mathematics</h3>
+            <p>Linear Algebra, Calculus, Probability, Statistics</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>AI & Analytics</h3>
+            <p>Data Analytics, Machine Learning (ML), Deep Learning (DL), AI, Classification, Regression, Object Detection, Predictive Analysis</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>Soft Skills</h3>
+            <p>Project Management, Business & Data-Driven Decision Making, Communication, Team Collaboration</p>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+            <h3>Research Interests</h3>
+            <p>Predictive Analysis, Robotics (Vision), Action Analysis, Video Analysis, Inspections, Reasoning</p>
+        </div>
+        
     </div>
-    
-    <div class="card">
-        <h3 class="card-title">[J.2] RezowanShuvo,MSMekala,EyadElyan.</h3>
-        <p class="card-meta">
-            <span class="tag">Conference</span>
-            <span>2024</span>
-            
-            <span class="tag" style="border-color: var(--accent-color); background: transparent;">Q1</span>
-            
-        </p>
-        <p>Rezowan et al.</p>
-        <a href="#" class="btn-text"
-            style="color: var(--accent-color); margin-top: 1rem; display: inline-block;">Read Paper &rarr;</a>
+</section>
+
+<section class="awards mt-5">
+    <h2>Honors and Awards</h2>
+    <ul>
+        
+        <li>
+            <strong>PhD Studentship</strong> (2023)<br>
+            Robert Gordon University - Fully funded PhD scholarship awarded by the School of Computing Engineering and Technology.
+        </li>
+        
+        <li>
+            <strong>Employee of the Month</strong> (2021)<br>
+            Time Research and Innovation (TRI) - Recognized for outstanding performance and contributions to research development.
+        </li>
+        
+    </ul>
+</section>
+
+<section class="volunteering mt-5">
+    <h2>Voluntary Experience</h2>
+    <ul>
+        
+        <li>
+            <strong>Reviewer</strong>, IEEE Transactions on Neural Networks and Learning Systems (Jun 2024 – Present)<br>
+            Reviewing technical manuscripts and providing constructive feedback.
+        </li>
+        
+        <li>
+            <strong>Volunteer</strong>, Active School Aberdeen, Scotland (May 2025 – Present)<br>
+            Engaging in voluntary sessions to support school activities.
+        </li>
+        
+    </ul>
+</section>
+
+<section class="references mt-5">
+    <h2>References</h2>
+    <div class="row">
+        
+        <div class="col-md-4 mb-3">
+            <p>
+                <strong>Eyad Elyan</strong><br>
+                Professor, Robert Gordon University<br>
+                Email: <a href="mailto:e.elyan@rgu.ac.uk">e.elyan@rgu.ac.uk</a>
+            </p>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <p>
+                <strong>Md Junayed Hasan</strong><br>
+                AI Engineer, Subsea7<br>
+                Email: <a href="mailto:junayed.hasan@subsea7.com">junayed.hasan@subsea7.com</a>
+            </p>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+            <p>
+                <strong>Dr. M Shamim Kaiser</strong><br>
+                Professor, Jahangirnagar University, Dhaka<br>
+                Email: <a href="mailto:mskaiser@juniv.edu">mskaiser@juniv.edu</a>
+            </p>
+        </div>
+        
     </div>
-    
-    <div class="card">
-        <h3 class="card-title">[J.1] RezowanShuvo,MSMekala,EyadElyan.</h3>
-        <p class="card-meta">
-            <span class="tag">Conference</span>
-            <span>2024</span>
-            
-            <span class="tag" style="border-color: var(--accent-color); background: transparent;">Q1</span>
-            
-        </p>
-        <p>Rezowan et al.</p>
-        <a href="#" class="btn-text"
-            style="color: var(--accent-color); margin-top: 1rem; display: inline-block;">Read Paper &rarr;</a>
-    </div>
-    
 </section>
 
-<section class="container section-header">
-    <h2 class="section-title">Featured Projects</h2>
-</section>
+        </main>
 
-<section class="container grid">
-    
-</section>
-
-    </main>
-
-    <footer>
-        <div class="container">
+        <footer>
             <p>&copy; 2026 Rezowan. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            <div class="socials">
+                <a href="https://github.com/Rezowan-Ferdous/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ferdous-rezowan/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=gECbOWsAAAAJ&hl=en" target="_blank"><i
+                        class="fas fa-graduation-cap"></i></a>
             </div>
-        </div>
-    </footer>
-
-    <script src="static/js/main.js"></script>
-    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+        </footer>
+    </div>
 </body>
 
 </html>

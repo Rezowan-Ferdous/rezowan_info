@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <h1>{{ publication.title }}</h1>
+    <p class="lead">{{ publication.authors }}</p>
+    <p class="meta">{{ publication.venue }}, {{ publication.year }}</p>
+    {% if publication.link %}
+    <a href="{{ publication.link }}" class="btn" target="_blank">View Paper</a>
+    {% endif %}
+    <hr>
+    <div class="content">
+        <h3>Abstract</h3>
+        {% if publication.abstract %}
+        {{ publication.abstract | safe }}
+        {% else %}
+        <p>No abstract availble.</p>
+        {% endif %}
+    </div>
+</article>
+<a href="{{ relative_root }}/research.html" class="btn mt-4">&larr; Back to Research</a>
+{% endblock %}

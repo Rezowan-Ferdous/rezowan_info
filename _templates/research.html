@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Research</h1>
+
+<div class="research-grid">
+    <div class="research-column">
+        <h2>Journals</h2>
+        {% for pub in journals %}
+        <div class="pub-item">
+            <h3>
+                {% if pub.link %}
+                <a href="{{ pub.link }}" target="_blank">{{ pub.title }}</a>
+                {% else %}
+                {{ pub.title }}
+                {% endif %}
+            </h3>
+            <p class="meta">{{ pub.authors }}</p>
+            <p class="meta">
+                <strong>{{ pub.venue }}</strong>, {{ pub.year }}
+                {% if pub.impact_factor %}
+                <span class="badge">{{ pub.impact_factor }}</span>
+                {% endif %}
+            </p>
+
+            {% if pub.abstract and pub.abstract.strip() %}
+            <p class="meta" style="margin-top: 0.5rem;"><small>{{ pub.abstract | striptags | truncate(150) }}</small>
+            </p>
+            <a href="{{ relative_root }}/research/{{ pub.id }}/index.html" class="btn">Read Summary</a>
+            {% endif %}
+
+            {% if pub.link %}
+            <a href="{{ pub.link }}" class="btn" target="_blank">PDF/Link</a>
+            {% endif %}
+
+            {% if pub.code_url %}
+            <a href="{{ pub.code_url }}" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+            {% endif %}
+
+            {% if pub.project_url %}
+            <a href="{{ pub.project_url }}" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i>
+                Project</a>
+            {% endif %}
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+
+    <div class="research-column">
+        <h2>Conferences</h2>
+        {% for pub in conferences %}
+        <div class="pub-item">
+            <h3>
+                {% if pub.link %}
+                <a href="{{ pub.link }}" target="_blank">{{ pub.title }}</a>
+                {% else %}
+                {{ pub.title }}
+                {% endif %}
+            </h3>
+            <p class="meta">{{ pub.authors }}</p>
+            <p class="meta">
+                <strong>{{ pub.venue }}</strong>, {{ pub.year }}
+            </p>
+
+            {% if pub.abstract and pub.abstract.strip() %}
+            <a href="{{ relative_root }}/research/{{ pub.id }}/index.html" class="btn">Read Summary</a>
+            {% endif %}
+
+            {% if pub.link %}
+            <a href="{{ pub.link }}" class="btn" target="_blank">PDF/Link</a>
+            {% endif %}
+
+            {% if pub.code_url %}
+            <a href="{{ pub.code_url }}" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+            {% endif %}
+
+            {% if pub.project_url %}
+            <a href="{{ pub.project_url }}" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i>
+                Project</a>
+            {% endif %}
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

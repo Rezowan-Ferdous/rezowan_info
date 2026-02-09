@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <h1>{{ post.title }}</h1>
+    <p class="meta">{{ post.date_posted.strftime('%B %d, %Y') }}</p>
+    <hr>
+    <div class="content">
+        {{ post.content | safe }}
+    </div>
+</article>
+<a href="{{ relative_root }}/blog.html" class="btn mt-4">&larr; Back to Blog</a>
+{% endblock %}
