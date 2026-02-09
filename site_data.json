@@ -92,7 +92,7 @@
             "location": "Aberdeen, Scotland",
             "start_date": "2023-03-01",
             "end_date": null,
-            "description": "\u2022 Conducting advanced research on complex surgical video understanding, focusing on spatial-temporal context analysis.<br>\u2022 Developing frameworks for future action prediction and safety evaluation to detect potential surgical errors.<br>\u2022 Implementing novel architectures using Vision Transformers and State Space Models (SSM) for segmentation and detection tasks.<br>\u2022 Pioneering the application of Large Language Models (LLMs) and Vision-Language Models (VLMs) to enhance visual reasoning for complex robotic tasks.<br>\u2022 Teaching students; conducted labs on Python programming, Data Science, and NLP."
+            "description": "Conducting advanced research on complex surgical video understanding, focusing on spatial-temporal context analysis. Developing frameworks for future action prediction and safety evaluation to detect potential surgical errors. Implementing novel architectures using Vision Transformers and State Space Models (SSM) for segmentation and detection tasks. Pioneering the application of Large Language Models (LLMs) and Vision-Language Models (VLMs) to enhance visual reasoning for complex robotic tasks. Teaching students; conducted labs on Python programming, Data Science, and NLP."
         },
         {
             "id": 2,
@@ -101,7 +101,7 @@
             "location": "Portland, OR-USA (Remote)",
             "start_date": "2022-05-01",
             "end_date": "2023-03-01",
-            "description": "\u2022 Engineered software solutions for Indian Child Welfare and Tribal Court systems using .NET Core 6 Framework and MSSQL Server.<br>\u2022 Developed and maintained e-court systems for criminal case management, ensuring robust data handling and security.<br>\u2022 Managed project version control and collaboration using Bitbucket and GitHub.<br>\u2022 Integrated complex database schemas with .NET backend services to support tribal healthcare and welfare services."
+            "description": "Engineered software solutions for Indian Child Welfare and Tribal Court systems using .NET Core 6 Framework and MSSQL Server. Developed and maintained e-court systems for criminal case management, ensuring robust data handling and security. Managed project version control and collaboration using Bitbucket and GitHub. Integrated complex database schemas with .NET backend services to support tribal healthcare and welfare services."
         },
         {
             "id": 3,
@@ -110,7 +110,7 @@
             "location": "Southampton, UK (Dhaka Branch)",
             "start_date": "2020-10-01",
             "end_date": "2022-10-01",
-            "description": "\u2022 Conducted research projects and led the Software Development Life Cycle (SDLC) in collaboration with developers.<br>\u2022 Assisted in system designing and requirement engineering to align technical outputs with research goals.<br>\u2022 Developed and deployed an end-to-end facial recognition system for smart attendance with MLOps.<br>\u2022 Analyzed chest X-ray data for COVID-19 detection using deep learning models."
+            "description": " Conducted research projects and led the Software Development Life Cycle (SDLC) in collaboration with developers. Assisted in system designing and requirement engineering to align technical outputs with research goals. Developed and deployed an end-to-end facial recognition system for smart attendance with MLOps. Analyzed chest X-ray data for COVID-19 detection using deep learning models."
         }
     ],
     "skills": {

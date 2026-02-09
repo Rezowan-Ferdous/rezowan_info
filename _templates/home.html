@@ -16,6 +16,77 @@
 
 </section>
 
+<section class="featured-content mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="feature-box">
+                <h3><i class="fas fa-microscope text-accent"></i> Latest Research</h3>
+                <div class="feature-content">
+                    {% for pub in selected_pubs %}
+                    <a href="{{ relative_root }}/research.html" class="feature-link">
+                        <span class="date">{{ pub.year }}</span>
+                        <span class="title">{{ pub.title|truncate(50) }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+                <a href="{{ relative_root }}/research.html" class="feature-more">View All Research &rarr;</a>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="feature-box">
+                <h3><i class="fas fa-code text-accent"></i> Key Projects</h3>
+                <div class="feature-content">
+                    {% if latest_projects %}
+                    {% for proj in latest_projects %}
+                    <a href="{{ relative_root }}/projects.html" class="feature-link">
+                        <span class="title">{{ proj.title }}</span>
+                        <span class="desc">{{ proj.description|truncate(50) }}</span>
+                    </a>
+                    {% endfor %}
+                    {% else %}
+                    <p class="text-muted small">Projects coming soon...</p>
+                    {% endif %}
+                </div>
+                <a href="{{ relative_root }}/projects.html" class="feature-more">View Projects &rarr;</a>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="feature-box">
+                <h3><i class="fas fa-pen-nib text-accent"></i> Recent Posts</h3>
+                <div class="feature-content">
+                    {% if latest_posts %}
+                    {% for post in latest_posts %}
+                    <a href="{{ relative_root }}/blog/{{ post.slug }}/index.html" class="feature-link">
+                        <span class="date">{{ post.date_posted.strftime('%b %d') }}</span>
+                        <span class="title">{{ post.title }}</span>
+                    </a>
+                    {% endfor %}
+                    {% else %}
+                    <p class="text-muted small">No posts yet.</p>
+                    {% endif %}
+                </div>
+                <a href="{{ relative_root }}/blog.html" class="feature-more">Read Blog &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="collaboration-cta mt-5 mb-5 space-y-4">
+    <div class="cta-box text-center p-5">
+        <h2><i class="far fa-handshake"></i> Interested in Collaboration?</h2>
+
+        <p class="lead mb-4">
+            My research interests include
+            <strong>{{ skills.get('Research Interests', []) | join(', ') }}</strong>.
+        </p>
+
+        <p>I am always open to discussing new research ideas, speaking opportunities, or consulting projects.</p>
+        <a href="mailto:{{ email }}" class="btn btn-primary mt-3 btn-lg">Get in Touch</a>
+    </div>
+</section>
+
 <section class="experience mt-5">
     <h2>Experience</h2>
     <div class="experience-list">

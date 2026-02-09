@@ -79,8 +79,8 @@ def build():
     references = data.get('references', [])
         
     # Prepare Contexts
-    latest_posts = posts[:3]
-    selected_pubs = publications[:3] # Just take first 3 for now as selected
+    latest_posts = posts[:1]
+    selected_pubs = publications[:1]
     
     # 1. Home
     render('home.html', {
@@ -88,6 +88,7 @@ def build():
         'active_page': 'home',
         'latest_posts': latest_posts,
         'selected_pubs': selected_pubs,
+        'latest_projects': projects[:1],
         'experience': experience,
         'skills': skills,
         'awards': awards,

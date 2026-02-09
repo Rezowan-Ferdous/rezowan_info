@@ -88,6 +88,75 @@ To make the site update automatically when you push code:
 
 ---
 
-## Troubleshooting
-*   **Permission Denied**: Check that your `.pem` key permissions are correct (`chmod 400 key.pem`).
-*   **Git Pull Failed**: If using a private repo, you may need to add an SSH key to GitHub for the EC2 user.
+---
+
+## Part 3: Connect Domain & Enable HTTPS (SSL)
+
+### 1. Point Your Domain (DNS)
+1.  Go to your Domain Registrar (Route 53, GoDaddy, Namecheap, etc.).
+2.  Create an **A Record**.
+    *   **Name**: `@` (root) and `www`.
+    *   **Value**: Your EC2 Public IP (`34.228.36.92`).
+3.  Wait a few minutes for DNS to propagate.
+
+### 2. Enable HTTPS (Free SSL with Certbot)
+SSH into your EC2 and run these commands to install Certbot and automatically configure Nginx.
+
+**For Amazon Linux 2023**:
+```bash
+# 1. Install Certbot and the Nginx plugin
+sudo dnf install python3-certbot-nginx -y
+
+# 2. Run Certbot (Follow the prompts!)
+sudo certbot --nginx
+```
+
+**For Amazon Linux 2**:
+```bash
+sudo amazon-linux-extras install epel -y
+sudo yum install certbot python-certbot-nginx -y
+sudo certbot --nginx
+```
+
+**During Certbot setup**:
+1.  Enter your email (for urgent renewal notices).
+2.  Agreet to Terms (`Y`).
+3.  **Enter your domain name(s)** (e.g., `rezowan.com www.rezowan.com`).
+4.  Certbot will verify the domain points to this server.
+5.  It will ask to redirect HTTP to HTTPS -> Choose **2** (Redirect).
+
+**Auto-Renewal**:
+Certbot certificates last 90 days. Test auto-renewal:
+```bash
+sudo certbot renew --dry-run
+```
+If that works, you are set forever!
+
+---
+
+## Troubleshooting "404 Not Found"
+If you see a "404 Not Found" nginx page:
+
+1.  **Check if `index.html` exists**:
+    ```bash
+    ls -l /home/ec2-user/rezowan_info/index.html
+    ```
+    *   **If missing**: Run `python3 build.py` inside the folder.
+    *   **If present**: Check permissions.
+
+2.  **Check Nginx Config**:
+    Ensure `root` points to the right place.
+    ```bash
+    cat /etc/nginx/nginx.conf | grep root
+    # Should say: root /home/ec2-user/rezowan_info;
+    ```
+
+3.  **Conflicting Configs**:
+    Sometimes a default config file interferes.
+    ```bash
+    ls /etc/nginx/conf.d/
+    # If you see default.conf, rename it:
+    sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.disabled
+    sudo systemctl restart nginx
+    ```
+

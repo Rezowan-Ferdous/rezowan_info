@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
+    /* Ensure content isn't cut off at bottom */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
 
 a {
@@ -70,13 +74,18 @@ nav a.active {
 
 /* Footer */
 footer {
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding-top: 2rem;
     border-top: 1px solid #eee;
     text-align: center;
     color: var(--secondary-color);
     font-size: 0.9rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    clear: both;
+    /* Ensure it clears any floating elements */
+    position: relative;
+    /* Ensure it respects flow */
 }
 
 /* Typography */
@@ -189,4 +198,134 @@ h3 {
 
 .header-socials a:hover {
     color: var(--accent-color);
+}
+
+/* Feature Boxes (Home) */
+.feature-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-content {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.feature-link {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.feature-link:last-child {
+    border-bottom: none;
+}
+
+.feature-link:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.feature-link .date {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: 0.1rem;
+}
+
+.feature-link .title {
+    font-weight: 500;
+}
+
+.feature-more {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.feature-more:hover {
+    text-decoration: underline;
+}
+
+/* Collaboration CTA */
+.cta-box {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .cta-box {
+        background: linear-gradient(to right, #2d2d2d, #252525);
+    }
+}
+
+.cta-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta-box .btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.cta-box .btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .header-socials {
+        margin-bottom: 0.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .cta-box {
+        padding: 2rem 1rem;
+    }
 }
